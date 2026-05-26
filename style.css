@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;                
+  height: 100vh;
+  width: 100%;
+}
+
+.logo-section {
+  flex: 0 0 25%;               
+  background-image: url(./Assets/chris-weiher-S-k0BArBfLk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;                
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: inherit;
+  margin-bottom: 120px;        
+}
+
+.signup-section {
+  flex: 0 0 75%;                
+  display: flex;               
+  flex-direction: column;
+  overflow-y: auto;
+  justify-content: space-evenly;
+}
+
+.form-row {
+  display: flex;               
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  flex: 1;                     
+  display: flex;                
+  flex-direction: column;
+}
+
+
+#signup fieldset {
+  border: none;
+  padding: 20px 40px;
+  margin: 0;
+  background-color: #f8fafc;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 25vw;
+  padding-bottom: 10px;
+}
+
+.message, .submit-btn, .login {
+  margin-left: 40px;
+}
+
+
+.logo img {
+  height: 20vh;
+  width: auto;
+}
+
+.logo-name {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "lobster two", sans-serif;
+}
+
+.message {
+  font-family: "patrick hand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.input-group label {
+  font-family: "patrick hand", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  padding: 8px 10px;
+  border: 1px solid #cdb5e1;
+  border-radius: 5px;
+  outline: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+
+.input-group input:focus {
+  border-color: #f5c9d6;
+  box-shadow: 0 0 0 3px rgba(196, 114, 140, 0.18);
+}
+
+.input-group input:user-valid {
+  border-color: green;
+  box-shadow: 0 0 0 1px rgb(0, 222, 70);
+}
+
+.input-group input:user-invalid {
+  border-color: red;
+  box-shadow: 0 0 0 1px rgb(255, 0, 0);
+}
+
+.submit-btn {
+  display: block;
+  background-color: rgb(255, 103, 128);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(205, 55, 80);
+}
+
+.login {
+  margin-top: 15px;
+  font-family: "patrick hand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.login a {
+  text-decoration: none;
+  color: rgb(255, 103, 128);
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "patrick hand", sans-serif;
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+}
+
+.photo-credit a {
+  color: white;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
